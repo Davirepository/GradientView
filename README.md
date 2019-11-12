@@ -15,3 +15,8 @@ Once you have Carthage [installed](https://github.com/Carthage/Carthage#installi
 3. On your application targets’ General settings tab, in the “Linked Frameworks and Libraries” section, drag and drop each framework you want to use from the [Carthage/Build](https://github.com/Carthage/Carthage/blob/master/Documentation/Artifacts.md#carthagebuild) folder on disk.
 4. On your application targets’ Build Phases settings tab, click the + icon and choose New Run Script Phase. Create a Run Script in which you specify your shell (ex: /bin/sh), add the following contents to the script area below the shell: `/usr/local/bin/carthage copy-frameworks`
 5. In section Input Files write this: `$(SRCROOT)/Carthage/Build/iOS/GradientView.framework`
+
+## How to use GradientView
+
+1. Import GradientView
+2. Сreate a variable with type GradientView and initialize the class with a set of colors (like this `var gradientView: GradientView = GradientView(colors: [.yellow, .orange])`)
